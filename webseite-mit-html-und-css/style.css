@@ -1,0 +1,352 @@
+/**********HEADER: FLEX + WRA**********/
+body{
+  background-image: url(https://th.bing.com/th/id/OIP.0UkAxU5DNklEMK7zhgYk2AHaFC?pid=ImgDet&rs=1);
+  background-attachment: fixed;
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  box-shadow: 0px 0px 5px 5px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(220, 199, 146, 0.477);
+  border-radius: 20px;
+}
+
+/********NAV, IMG, UL  (FLEX + WRAP)*******/
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+header nav .logo img {
+  margin: 10px;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid gray;
+  border-radius: 40px;
+  background-color:rgba(255, 255, 255, 0.586);
+}
+header nav .logo img:hover{
+ border:black 2px solid;
+ box-shadow: 3px 3px 3px 3px black;
+ transition: 2s;
+ background-color: rgba(0, 255, 255, 0.374);
+}
+header nav ul .start {
+  margin: 20px;
+  height: 25px;
+  box-shadow: black 0px 0px 2px 2px;
+  border-radius: 5px;
+  background-color: rgba(243, 240, 240, 0.772);
+}
+header nav ul .info:hover {
+  background-color: rgba(0, 255, 255, 0.257);
+  box-shadow: 3px 3px 3px 3px ;
+  transition:1s;
+}
+header nav ul .start:hover {
+  background-color: rgba(0, 255, 255, 0.257);
+  box-shadow: 3px 3px 3px 3px ;
+  transition:1s;
+}
+header nav ul .impress:hover {
+  background-color: rgba(0, 255, 255, 0.257);
+  box-shadow: 3px 3px 3px 3px ;
+  transition:1s;
+}
+
+header nav ul .info {
+  margin: 20px;
+  height: 25px;
+  box-shadow: black 0px 0px 2px 2px;
+  border-radius: 5px;
+  background-color: rgba(243, 240, 240, 0.772);
+}
+header nav ul .impress {
+  margin: 20px;
+  height: 25px;
+  box-shadow: black 0px 0px 2px 2px;
+  border-radius: 5px;
+  background-color: rgba(243, 240, 240, 0.772);
+}
+header .suchen{
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+}
+}
+header .suchen input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 15px;
+ 
+}
+/*----------FOOTER,FLEX + WRAP--------*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 5px 5px;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: rgba(220, 199, 146, 0.477);
+  border-radius: 20px;
+}
+footer .divfooterA{
+  border:2px solid gray;
+  border-radius: 30px;
+  height: 30px;
+  width: 100%;
+  text-align: end;
+  height: 30px;
+}
+footer .divfooterA:hover{
+  background-color:rgba(0, 255, 255, 0.209);
+  transition: 2s;
+ 
+}
+footer .divfooterA .a{
+  box-shadow: black 2px 2px 2px 2px;
+  border-radius: 5px;
+  background-color: rgba(243, 240, 240, 0.772);
+}
+footer .divfooterA .b{
+  margin: 20px;
+  box-shadow: black 2px 2px 2px 2px;
+  border-radius: 5px;
+  background-color: rgba(243, 240, 240, 0.772);
+}
+footer .divfooterA .c{
+  margin: 20px;
+  box-shadow: black 2px 2px 2px 2px;
+  border-radius: 5px;
+  background-color: rgba(243, 240, 240, 0.772);
+}
+
+/*Einstellung icon 2 DIV (FLEX + NO-WRAP), IMG‘s*/
+footer .icon1 {
+    display: grid;
+    grid-column-end: span 3;
+}
+/*+++++Einstellung icon 2 DIV (FLEX + NO-WRAP), IMG‘s+++*/
+footer .icon2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+footer .icon2 img {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  margin: 8px;
+}
+/****Startseite / index.html GRID mit 2 Spalten,je50% breit***/
+main{
+display: grid;
+grid-template-columns: 50% 50%;
+background-color: rgba(245, 222, 179, 0.162);
+}
+main .FM div:hover{
+  box-shadow: 3px 3px 3px 3px;
+  border: groove rgb(26, 77, 129) 5px;
+  transition: 1s;
+}
+main .FM{
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 3px rgba(78, 193, 195, 0.308);
+    border: inset black 3px;
+    border-radius: 10px;
+    background-color: rgba(227, 236, 235, 0.422);
+    grid-column-end: span 2;
+  }
+main .FM div {
+  max-width: 300px;
+  overflow: auto;
+  box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.367);
+  border: inset black 3px;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.497);
+}
+main  img{
+  box-shadow: 3px 3px 3px 3px black;
+  margin-left: 60px;
+  border:1px inset white;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+}
+main  h3{
+  background-color: rgba(250, 128, 114, 0.155);
+  text-align: center;
+  text-decoration: underline;
+}
+main  p{
+  background-color:rgba(250, 128, 114, 0.155);
+}
+main .Roller{
+  max-width: 100%;
+  overflow: auto;
+  box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.367);
+  border: inset black 3px;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.497);
+  grid-column-start: 2;
+}
+main .Roller:hover{
+  box-shadow: 3px 3px 3px 3px;
+  border: groove rgb(26, 77, 129) 5px;
+  transition: 1s;
+}
+main .SA{
+  justify-content: space-around;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 3px rgba(78, 193, 195, 0.308);
+  border: inset black 3px;
+  border-radius: 10px;
+  background-color: rgba(227, 236, 235, 0.422);
+  grid-column-end: span 2;
+}
+main .SA div {
+  max-width: 300px;
+  overflow: auto;
+  box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.367);
+  border: inset black 3px;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.497);
+}
+main div:hover{
+  box-shadow: 3px 3px 3px 3px;
+  border: groove rgb(26, 77, 129) 5px;
+  transition: 1s;
+}
+main img:hover{
+  box-shadow: 3px 3px 3px 3px;
+  border: groove rgb(26, 77, 129) 5px;
+  transition: 1s;
+}
+/*******Impressum / impress.html : FLEX + WRAP********/
+body .mainimpress{
+  display:flex;
+  flex-wrap: wrap;
+}
+body .mainimpress .a, .b, .c{
+  box-shadow: 3px 3px 3px 3px ;
+  border: groove 5px rgba(69, 68, 68, 0.23);
+  margin-right: 200px;
+  margin-left:200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  width: 50%;
+  background-color: rgba(250, 128, 114, 0.573);
+}
+body .mainimpress .a h3{
+  color:white;
+  border-radius: 10px;
+  width: 150px;
+}
+body .mainimpress .a p{
+  color:white;
+}
+body .mainimpress .b h3{
+  color:white;
+  border-radius: 10px;
+  width: 150px;
+}
+body .mainimpress .b p{
+  color:white;
+}
+body .mainimpress .c h3{
+  color:white;
+  border-radius: 10px;
+  width: 150px;
+}
+body .mainimpress .c p{
+  color:white;
+}
+body .mainimpress .d{
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.367);
+    border: inset black 3px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.497);
+  }
+  main .mainimpress .a:hover{
+    box-shadow: 3px 3px 3px 3px;
+    border: groove rgb(26, 77, 129) 5px;
+    transition: 1s;
+  }
+   /***********main:display Flex, Flex:wrap****/
+  body .maininfo{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  /*********** Div Mutter:GRID, 2 Spalten, 2 Zeilen
+  /*MaximaleBreite 320px und maximale Höhe 300px*/
+  
+  .maininfo .divinfo{
+    background-color: lightpink;
+    border:inset 2px violet;
+    box-shadow: 3px 3px 3px 3px gray;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 2;
+    max-height:300px;
+    max-width:320px;
+  }
+  body .maininfo .divinfo .A{
+    border:gray 2px inset;
+    box-shadow: gray 2px 2px 2px 2px;
+    max-height: 140px;
+    overflow: auto;
+  }
+  body .maininfo .divinfo .A:hover{
+  transition: 2s;
+  border:gray 2px inset;
+  box-shadow: gray 2px 2px 2px 2px;
+  }
+
+  /*****Maximale Höhe 140px und overflow: auto****/
+  body .maininfo .divinfo .B{
+   border:gray 2px inset;
+   box-shadow: gray 2px 2px 2px 2px;
+   max-height: 140px;
+   overflow: auto;
+  }
+  /*Maximale Höhe 140px und overflow: auto;*/
+  body .maininfo .divinfo .C{
+    border:gray 2px inset;
+    box-shadow: gray 2px 2px 2px 2px;
+    max-height: 140px;
+    overflow: auto;
+   }
+   body .maininfo .divinfo .D{
+    border:gray 2px inset;
+    box-shadow: gray 2px 2px 2px 2px;
+    max-height: 140px;
+    overflow: auto;
+   }
+   .maininfo .divinfo img{
+     height: 140px;
+   }
+
+ 
